@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <title>Web site title</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.6.1/css/iziModal.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="<?php echo get_home_url(); ?>" class="header__logo">
+            <picture>
+                <img src="./assets/img/logo.png" alt="Logo">
+            </picture>
+        </a>
+        <nav class="header__menu">
+            <li><a href="#">Home</a></li>
+        </nav>
+        <div class="header__group">
+            <div href="#!" class="lang">
+                <a href="#"><img src="./assets/img/icon/lang.svg" alt="Lang icon"></a>
+                <ul class="dropdown">
+                    <li class="lang-item">
+                        <a lang="ua" hreflang="ua" href="#">Українська</a>
+                    </li>
+                    <li class="lang-item">
+                        <a lang="ru" hreflang="ru" href="#">Русский</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="phone">
+                <a href="tel:<?php the_field('phone_number', 'option'); ?>"><img src="./assets/img/icon/phone.svg" alt="Phone image"></a>
+            </div>
+        </div>
+        <div class="mobile_burger">
+            <span></span>
+        </div>
+
+        <div class="mobile_menu">
+            <nav class="header__menu">
+                <li><a href="#">Home</a></li>
+            </nav>
+            <div class="header__group">
+                <div href="#!" class="lang mobile-lang">
+                    <a href="#"><img src="./assets/img/icon/lang.svg" alt="Lang icon"></a>
+                    <ul class="dropdown">
+                        <li class="lang-item">
+                            <a lang="ua" hreflang="ua" href="#">Українська</a>
+                        </li>
+                        <li class="lang-item">
+                            <a lang="ru" hreflang="ru" href="#">Русский</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    <a href="tel:123456"><img src="./assets/img/icon/phone.svg" alt="Phone image"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="s-hero" style="--background: url(../assets/img/bg-patern.png)">
+        <div class="container">
+          <div class="hero_middle"><img src="./assets/img/hero_middle.png" alt="Hero middle image"></div>
+          <h1 class="hero_title aos-init aos-animate" data-aos="fade-up">Легальное пребывание <span>в Польше:</span> <br> быстро, просто, надежно</h1>
+          <div class="hero_box aos-init aos-animate" data-aos="zoom-in">
+            <h3 class="title">Консультируем и помогаем в оформлении документов для легализации пребывания в Польше</h3>
+                <a href="javascript:void(0)" class="btn">Узнать больше</a>
+            </div>
+          <div class="hero_spilar" data-aos="fade-up-left"><img src="./assets/img/icon/spilar.svg" alt="Spilar icon"></div>
+        </div>
+    </section>
+
+    <section class="s-banner" style="--background: url(#4F6427)">
+        <ul class="banner_list">
+            <li><img src="./assets/img/icon/gerb.svg" alt="icon">Замена водительского удостоверения на польское</li>
+            <li><img src="./assets/img/icon/gerb.svg" alt="icon">Zameldowanie (meldunek), договор аренды жилья</li>
+            <li><img src="./assets/img/icon/gerb.svg" alt="icon">Техосмотр автомобиля</li>
+            <li><img src="./assets/img/icon/gerb.svg" alt="icon">PESEL (без присутствия)</li>
+        </ul>
+    </section>
+
+    <section class="s-about">
+      <div class="container">
+        <div class="about_info">
+          <h3 class="sub-title" data-aos="fade-up">Специализация</h3>
+          <h2 class="title" data-aos="fade-up">О компании</h2>
+          <div class="dsc" data-aos="fade-up">
+            Наша Компания предлагает полный спектр услуг по подготовке и оформлению документов для легального пребывания в Польше. Мы работаем с клиентами из всех стран мира и помогаем им получить необходимые разрешения и визы, чтобы легально проживать и работать в Польше. Мы всегда прилагаем все усилия, чтобы предоставить нашим клиентам лучший сервис.
+          </div>
+            <a href="javascript:void(0)" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown" class="btn" data-aos="fade-up">Узнать больше</a>
+        </div>
+        <div class="about_img" data-aos="fade-left"><img src="./assets/img/about.png" alt="About image"></div>
+      </div>
+    </section>
+
+    <section class="s-why-we">
+      <div class="container">
+        <h2 class="why-we_title" data-aos="fade-up">Почему стоит выбрать именно нас?</h2>
+
+        <div class="why-we_grid">
+            <div class="item" data-aos="zoom-in-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/why_time.svg" alt="Icon">
+              </div>
+              <h3 class="title">Скорость и соблюдение сроков</h3>
+              <div class="dsc">
+                <p>Мы уделяем особое внимание скорости и своевременности в предоставлении документации, ведь понимаем, насколько это важно для наших клиентов.</p> &nbsp;
+              </div>
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/why_octicon.svg" alt="Icon">
+              </div>
+              <h3 class="title">Знание законодательства</h3>
+              <div class="dsc">
+                <p>Наша компания имеет глубокие знания и понимание польского законодательства, что позволяет нам создавать документы, полностью соответствующие требованиям и стандартам страны.</p> &nbsp;
+              </div>
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/why_handshake.svg" alt="Icon">
+              </div>
+              <h3 class="title">Индивидуальный подход</h3>
+              <div class="dsc">
+                <p>У нас индивидуальный подход к каждому клиенту. Наши эксперты тщательно изучают уникальные потребности и требования каждого клиента.</p> &nbsp;
+              </div>
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/why_bag.svg" alt="Icon">
+              </div>
+              <h3 class="title">Экспертность и опыт</h3>
+              <div class="dsc">
+                <p>Наш большой опыт и знания в юридических и административных вопросах позволяет предоставлять вам высококвалифицированную помощь в формировании различных видов документации.</p> &nbsp;
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-how-do">
+      <div class="container">
+
+        <div class="how-do_grid">
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <h2 class="title">Как происходит сотрудничество?</h2>
+              <div class="dsc">Пошаговая инструкция</div>
+            </div>
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <div class="number"> 01 <img src="http://belime.pl/wp-content/uploads/2023/11/arrow-right.svg" alt="Right arrow icon">
+              </div>
+              <h2 class="title">Запрос на Консультацию</h2>
+              <div class="dsc">
+                <p>Ваше сотрудничество с нами начинается с запроса на консультацию. Вы можете обратиться к нам через электронную почту, телефон или оставить заявку на нашем веб-сайте ниже.</p>
+              </div>
+              <img class="check" src="http://belime.pl/wp-content/uploads/2023/11/round-check.svg" alt="Check icon">
+            </div>
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <div class="number"> 02 <img src="http://belime.pl/wp-content/uploads/2023/11/arrow-right.svg" alt="Right arrow icon">
+              </div>
+              <h2 class="title">Личная Консультация</h2>
+              <div class="dsc">
+                <p>После получения вашего запроса мы организовываем личную консультацию. Это может происходить лично в наших офисах или в режиме удаленной консультации через видеосвязь. На этом этапе мы рассматриваем ваши потребности и требования.</p>
+              </div>
+              <img class="check" src="http://belime.pl/wp-content/uploads/2023/11/round-check.svg" alt="Check icon">
+            </div>
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="number"> 03 <img src="http://belime.pl/wp-content/uploads/2023/11/arrow-right.svg" alt="Right arrow icon">
+              </div>
+              <h2 class="title">Уточнение Задачи</h2>
+              <div class="dsc">
+                <p>После консультации мы вместе с вами уточняем задачу и обсуждаем детали, связанные с созданием конкретных документов. Это включает определение необходимых видов документации, сроки выполнения и другие ключевые параметры.</p>
+              </div>
+              <img class="check" src="http://belime.pl/wp-content/uploads/2023/11/round-check.svg" alt="Check icon">
+            </div>
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="number"> 04 <img src="http://belime.pl/wp-content/uploads/2023/11/arrow-right.svg" alt="Right arrow icon">
+              </div>
+              <h2 class="title">Заключение Соглашения</h2>
+              <div class="dsc">
+                <p>После уточнения задачи мы заключаем соглашение, в котором фиксируются все условия сотрудничества, стоимость услуг, сроки и другие важные вопросы. Это обеспечивает четкость и взаимопонимание обеих сторон.</p>
+              </div>
+              <img class="check" src="http://belime.pl/wp-content/uploads/2023/11/round-check.svg" alt="Check icon">
+            </div>
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="number"> 05 <img src="http://belime.pl/wp-content/uploads/2023/11/arrow-right.svg" alt="Right arrow icon">
+              </div>
+              <h2 class="title">Создание Документов</h2>
+              <div class="dsc">
+                <p>После заключения сделки мы начинаем процесс создания необходимых документов в соответствии с вашими требованиями и в соответствии с действующим законодательством Польши.</p>
+              </div>
+              <img class="check" src="http://belime.pl/wp-content/uploads/2023/11/round-check.svg" alt="Check icon">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-reviews">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-up">Отзывы</h2>
+
+        <div class="reviews_grid">
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/text-arrow.svg" alt="reviews icon">
+              </div>
+              <div class="box">
+                <div class="dsc">
+                  <p>Обратилась в компанию для получения PESEL и замены моих украинских документов на польские. Быстро и удобно, даже не нужно было лично встречаться, что очень важно для меня. Поражена эффективностью и внимательностью к клиентам.</p>
+                </div>
+                <h4 class="avtor">Мария Г.</h4>
+                <span class="position">студентка</span>
+              </div>
+            </div>
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/text-arrow.svg" alt="reviews icon">
+              </div>
+              <div class="box">
+                <div class="dsc">
+                  <p>Лучшие в Польше по техническому обслуживанию авто! Ежегодно прохожу ТО годовой без очередей и лишних недоразумений. Рекомендую для водителей такси!</p>
+                </div>
+                <h4 class="avtor">Игорь С.</h4>
+                <span class="position">таксист</span>
+              </div>
+            </div>
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/text-arrow.svg" alt="reviews icon">
+              </div>
+              <div class="box">
+                <div class="dsc">
+                  <p>Очень довольна качеством обслуживания. Оформление meldunek и заключение договора аренды прошло без недоразумений. Профессиональная команда, которая реально облегчает жизнь в новой стране!</p>
+                </div>
+                <h4 class="avtor">Анна С.</h4>
+                <span class="position">IT-специалист</span>
+              </div>
+            </div>
+            <div class="item aos-init aos-animate" data-aos="fade-up">
+              <div class="icon">
+                <img src="http://belime.pl/wp-content/uploads/2023/11/text-arrow.svg" alt="reviews icon">
+              </div>
+              <div class="box">
+                <div class="dsc">
+                  <p>Ваша компания помогла мне заменить водительское удостоверение и зарегистрировать автомобиль. Поражен вашей внимательностью к деталям и высоким уровнем профессионализма. Спасибо за отличную работу!</p>
+                </div>
+                <h4 class="avtor">Денис Р</h4>
+                <span class="position">фотограф</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-faq">
+      <div class="container">
+        <div class="faq_title">
+          <h2 class="section__title" data-aos="fade-up">FAQ (Частые вопросы)</h2>
+          <div class="dsc" data-aos="fade-up">Найдите ответы на наиболее актуальные вопросы относительно наших услуг и процесса пребывания в Польше.</div>
+          <img class="spilar" data-aos="fade-right" src="./assets/img/icon/faq_spilar.svg" alt="Spilar">
+        </div>
+        <div class="faq-list">
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="faq-list__title">
+                <h4>Какие документы нужны для получения PESEL без присутствия?</h4>
+                <button type="button">
+                  <img src="http://belime.pl/wp-content/themes/belime.pl/assets/img/icon/faq_plus.svg" alt="Plus Svg icon">
+                </button>
+              </div>
+              <div class="faq-list__content">
+                <p></p>
+                <p>Для получения PESEL (Польский идентификационный номер лица) без личного присутствия могут понадобиться лишь ваш зарубежный паспорт и доверенность на нашего представителя. Вам не нужно будет стоять в очередях, так как это будем делать мы от вашего имени.</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="faq-list__title">
+                <h4>Можно ли получить консультации после завершения процесса?</h4>
+                <button type="button">
+                  <img src="http://belime.pl/wp-content/themes/belime.pl/assets/img/icon/faq_plus.svg" alt="Plus Svg icon">
+                </button>
+              </div>
+              <div class="faq-list__content">
+                <p></p>
+                <p>Да, вы можете обращаться к нам для консультаций как перед, так и после завершения процесса. Мы готовы вам помочь и ответить на все ваши вопросы, предоставить необходимые рекомендации и надежную поддержку на каждом этапе.</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="faq-list__title">
+                <h4>Можно ли получить детали о состоянии моего дела во время обработки документов?</h4>
+                <button type="button">
+                  <img src="http://belime.pl/wp-content/themes/belime.pl/assets/img/icon/faq_plus.svg" alt="Plus Svg icon">
+                </button>
+              </div>
+              <div class="faq-list__content">
+                <p></p>
+                <p>Да, вы всегда можете получить подробности о состоянии вашего дела во время обработки документов. Мы готовы предоставить вам информацию о текущем статусе и ответить на все ваши вопросы о процессе. Не стесняйтесь обращаться к нам для получения актуальной информации.</p>
+                <p></p>
+              </div>
+            </div>
+            <div class="item aos-init" data-aos="fade-up">
+              <div class="faq-list__title">
+                <h4>Что означает термин "акцизный сбор"?</h4>
+                <button type="button">
+                  <img src="http://belime.pl/wp-content/themes/belime.pl/assets/img/icon/faq_plus.svg" alt="Plus Svg icon">
+                </button>
+              </div>
+              <div class="faq-list__content">
+                <p></p>
+                <p>Термин «акцизный сбор» указывает на обязательный налог, который взимается при регистрации автомобилей в Польше. Этот сбор может применяться как к подержанным автомобилям, импортированным из стран, таких как Германия, Бельгия, Литва и другие, так и к новым автомобилям, приобретенным на территории Польши. Сумма акциза зависит от ряда факторов, таких как объем двигателя автомобиля и его тип (обычный или гибридный).</p>
+                <p></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo"><img src="./assets/img/logo.png" alt="Logo"></div>
+            <ul class="social__list">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/icon/instagram.svg" alt="social Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/icon/telegram.svg" alt="social Icon">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer_bottom">
+                <div class="copyright">Copyright</div>
+                <nav class="privacy_menu">
+                    <li id="menu-item-346" class="menu-item"><a href="#">Terms & Conditions</a></li>
+                    <li id="menu-item-347" class="menu-item"><a href="#">Privacy Policy</a></li>
+                </nav>
+            </div>
+    </footer>
+
+    <!-- Modal structure -->
+    <div id="modal" class="form-modal">
+        <h1>This is modal</h1>
+    </div>
+ 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.6.1/js/iziModal.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>AOS.init({disable: 'mobile'});</script>
+    <script>$("#modal").iziModal();</script>
+</body>
+</html>
